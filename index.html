@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Rápidos para Docentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recursos Rápidos para Docentes</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#resources">Recursos</a>
+        <a href="#contact">Contacto</a>
+        <a href="#about">Acerca de</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenidos</h2>
+            <p>En esta página encontrarás una variedad de recursos útiles para docentes de todos los niveles educativos.</p>
+        </section>
+
+        <section id="resources">
+            <h2>Recursos</h2>
+            <div class="resource">
+            <h2>Sorteador de Números</h2>
+            <p>Ingresa el rango de números para sortear:</p>
+            <label for="min">Número Mínimo:</label>
+            <input type="number" id="min" name="min"><br>
+            <label for="max">Número Máximo:</label>
+            <input type="number" id="max" name="max"><br><br>
+            <div class="button-container">
+            <button id="sortearButton">Sortear</button>
+            <button id="resetButton" style="display: none;">Empezar de nuevo</button>
+             </div>
+            <p id="resultContainer"></p>
+                
+        </section>
+                <h3>Cronómetro</h3>
+                <p>Utiliza un cronómetro sencillo para lo que necesites.</p>
+               
+            </div>
+            <div class="resource">
+                <h3>Escala de Notas</h3>
+                <p>Obten la escala de notas según tus requerimientos</p>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna duda o sugerencia, por favor, contáctanos a través del siguiente formulario.</p>
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>Acerca de</h2>
+            <p>Somos un grupo de educadores comprometidos con la mejora de la educación a través de la provisión de recursos útiles para docentes.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recursos para Docentes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="sortear.js"></script>
+</body>
+</html>
